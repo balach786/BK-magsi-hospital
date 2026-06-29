@@ -14,8 +14,8 @@
  *   Feedback | Careers | AmbulanceRequests | Announcements | Contacts
  */
 
-const SPREADSHEET_ID = 'PASTE_YOUR_SHEET_ID_HERE';
-const DRIVE_FOLDER_ID = 'PASTE_YOUR_DRIVE_FOLDER_ID_HERE';
+const SPREADSHEET_ID = '13P65Df6AbQB8a75QO_qW_zUCC5pH1awzdw4QF0iWoIY';
+const DRIVE_FOLDER_ID = 'https://drive.google.com/drive/u/0/folders/1BpELJYIOWcmSWaXjoxcmAFe_o2s4a23j';
 const HOSPITAL = { name: 'BK Baloch Hospital', short: 'BKBH', email: 'info@bkbalochhospital.com' };
 
 const HEADERS = {
@@ -99,7 +99,7 @@ function getLabReport(b) {
 
 function submitCareer(b) {
   let link = '';
-  if (b.resume && DRIVE_FOLDER_ID !== 'PASTE_YOUR_DRIVE_FOLDER_ID_HERE') {
+  if (b.resume && DRIVE_FOLDER_ID !== 'https://drive.google.com/drive/u/0/folders/1BpELJYIOWcmSWaXjoxcmAFe_o2s4a23j') {
     try {
       const m = b.resume.match(/^data:(.+);base64,(.+)$/);
       if (m) {
